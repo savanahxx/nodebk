@@ -8,8 +8,6 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const userAgent = req.headers["user-agent"];
-
 
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone } = req.body;
