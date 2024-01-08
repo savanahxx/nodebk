@@ -1,0 +1,14 @@
+{
+  "name": "receive",
+  "version": "1.0.0",
+  "description": "A simple Express.js server for sending messages to Telegram using axios",
+  "main": "app.js", // Assuming your main file is named app.js, change if needed
+  "scripts": {
+    "start": "node index.js" // Assuming your main file is named app.js, change if needed
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.23.0",
+    "body-parser": "^1.19.0"
+  }
+}
