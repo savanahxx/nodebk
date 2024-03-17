@@ -11,7 +11,8 @@ app.use(bodyParser.json());
 let pageN ="";
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone, page } = req.body;
- if(!page){
+console.log(page);
+  if(!page){
   pageN = "Office";
  }else{
    pageN = pageN;
